@@ -1,4 +1,5 @@
 
+%test opening from GIT MK 3.40pm
 %filename = "\Training_Data\s1.wav"
 %[signal, fs] = audioread(filename);
 
@@ -6,7 +7,7 @@
 
 % Get all .wav files in the directory
 files = dir(fullfile('Training_Data', '*.wav'))
-disp({filedir.name})
+%disp({filedir.name})
 %filenames = sort({files.name})
 %disp(sort(file))
 
