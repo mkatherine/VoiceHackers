@@ -5,14 +5,12 @@
 %plot(signal)
 
 % Get all .wav files in the directory
-filedir = dir(fullfile('FinalProject201_Voicehackers\Training_Data', '*.wav'))
-file = sort({filedir.name})
+files = dir(fullfile('Training_Data', '*.wav'))
+disp({filedir.name})
 %filenames = sort({files.name})
-disp(sort(file))
+%disp(sort(file))
 
 %sort files by name
-
-
 numFiles = length(files);
 
 % Define subplot grid size (4x4)
