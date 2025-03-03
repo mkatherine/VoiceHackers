@@ -10,7 +10,7 @@ energyThreshold = 0.0005; % Adjust this threshold for silence detection
 k = 20;  % Number of Mel filters
 fs = fs_in;
 signal = signal_in;
-s
+
 % Generate Mel filter bank
 melfilterbank = melfb(k,nfft,fs);
 
@@ -48,5 +48,5 @@ numCoefficients = 20;
 
 our_mfcc = our_mfcc(2:numCoefficients, :);
 
-disp(our_mfcc);
+%disp(our_mfcc);
 end
