@@ -3,10 +3,10 @@
 Voice Detection: Plot of audio signals after applying filter to remove anything with energy 0.0005 
 ![image](https://github.com/user-attachments/assets/66ad82f2-8c22-4b36-acf2-8042817248f0)
 
-![image](https://github.com/user-attachments/assets/b614e0f7-b554-453b-b0ad-46f486cc57fe)
+![image](https://github.com/user-attachments/assets/08b9beb1-f883-4bfe-baa2-006d20a26904)
 
-![image](https://github.com/user-attachments/assets/89d3e0cf-02b8-491b-a2b4-0be1ec5ea44d)
+![image](https://github.com/user-attachments/assets/275d7fef-d893-4e4c-8734-2e873b8ac2ea)
 
-![image](https://github.com/user-attachments/assets/4280eacc-2dbb-4fcf-b0bd-59d911a315de)
+![image](https://github.com/user-attachments/assets/2ac3e30a-9579-45a5-8ae6-87aaf18953b0)
 
-![image](https://github.com/user-attachments/assets/e6f0dd9a-aa7b-4129-b2b5-b903017b03e1)
+![image](https://github.com/user-attachments/assets/70087792-eeb9-46f0-9470-30d0fb06da81)
