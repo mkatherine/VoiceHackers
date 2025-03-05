@@ -10,3 +10,6 @@ Voice Detection: Plot of audio signals after applying filter to remove anything 
 ![image](https://github.com/user-attachments/assets/2ac3e30a-9579-45a5-8ae6-87aaf18953b0)
 
 ![image](https://github.com/user-attachments/assets/70087792-eeb9-46f0-9470-30d0fb06da81)
+
+VQ
+<img width="1239" alt="image" src="https://github.com/user-attachments/assets/59c71cc6-68a5-4540-affd-8008a6d5a575" />
