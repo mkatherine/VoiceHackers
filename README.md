@@ -1,3 +1,6 @@
+Human Recognition Rate
+Maria Katherine - 75% - might redo
+
 ![image](https://github.com/user-attachments/assets/74d3cb23-5fe4-42de-80d8-408750a25447)
 
 Voice Detection: Plot of audio signals after applying filter to remove anything with energy 0.0005 
