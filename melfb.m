@@ -23,27 +23,33 @@ function m = melfb(p, n, fs)
 %               plot(linspace(0, (12500/2), 129), melfb(20, 256, 12500)'),
 %               title('Mel-spaced filterbank'), xlabel('Frequency (Hz)');
 
-f0 = 700 / fs;
-fn2 = floor(n/2);
 
-lr = log(1 + 0.5/f0) / (p+1);
+f0 = 700 / fs; %define scaling factor 
+fn2 = floor(n/2); %half the fft size, which is the nyquists freq
+
+lr = log(1 + 0.5/f0) / (p+1); %determines logarithmic spacing of the mel filterbank
 
 % convert to fft bin numbers with 0 for DC term
-bl = n * (f0 * (exp([0 1 p p+1] * lr) - 1));
+bl = n * (f0 * (exp([0 1 p p+1] * lr) - 1)); %this defines the FFT bin locations of filter edges, using mel frequency scale
 
+
+%defining boundaries
 b1 = floor(bl(1)) + 1;
 b2 = ceil(bl(2));
 b3 = floor(bl(3));
 b4 = min(fn2, ceil(bl(4))) - 1;
 
+%generate each bin filter weight
 pf = log(1 + (b1:b4)/n/f0) / lr;
 fp = floor(pf);
 pm = pf - fp;
 
-r = [fp(b2:b4) 1+fp(1:b3)];
-c = [b2:b4 1:b3] + 1;
-v = 2 * [1-pm(b2:b4) pm(1:b3)];
+%generate sparce matrix 
+r = [fp(b2:b4) 1+fp(1:b3)]; %row
+c = [b2:b4 1:b3] + 1; %column
+v = 2 * [1-pm(b2:b4) pm(1:b3)]; %filter weights
 
+%generate a sparce filterbank matrix 
 m = sparse(r, c, v, p, 1+fn2);
 end
 
