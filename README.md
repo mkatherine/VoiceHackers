@@ -30,5 +30,6 @@ with the original 11 train data and 8 test data, e = 0.01 and M = 6, we obtained
 
 Test 7 - Part II 
 with 5 additional test and train pairs, totalling in 16 train data and 13 test data. We obtained a **speaker recognition rate of 84.6**
+
 ![Screenshot 2025-03-06 at 2 29 07 PM](https://github.com/user-attachments/assets/b61e1abb-ff4f-4a57-96db-9b8b1ed6de23)
 
