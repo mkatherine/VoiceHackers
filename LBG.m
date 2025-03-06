@@ -1,4 +1,4 @@
-function codebook = LBG(data, M)
+function codebook = LBG(data, M,e)
     % LBG Algorithm for Vector Quantization (Row-wise Implementation)
     % Inputs:
     % - Data: (size: D(19)-dimension training vectors x L samples)
@@ -8,7 +8,6 @@ function codebook = LBG(data, M)
     % Usage: Clustering L training vectors into M codebook vectors
     
     e = 0.01;  % Splitting parameter
-    
  
     %% a. Initialize with a single-vector codebook; this is the centroid of all training vectors
     codebook = mean(data, 1);  % row vector containing the mean of each column (mean val across all frames for each mfcc)
@@ -22,7 +21,7 @@ function codebook = LBG(data, M)
         while true
             %% c. Assign each vector to the closest codeword
             distances = pdist2(data, codebook); % now training vectors are rows and centroids are the cols
-            [min, labels] = min(distances, [], 2); % stores col index of min centriod along each row, aka closest centroid to each training vector
+            [~, labels] = min(distances, [], 2); % stores col index of min centriod along each row, aka closest centroid to each training vector
             
             %% d. Centroid Update
             new_codebook = zeros(size(codebook)); % create array of zeros to store new
