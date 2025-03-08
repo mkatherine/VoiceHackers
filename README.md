@@ -38,7 +38,9 @@ VQ
 
 
 Test 7 - Part I
-with the original 11 train data and 8 test data, e = 0.01 and M = 6, we obtained a **speaker recognition rate of 75%**
+
+with the original 11 train data and 8 test data, e = 0.01 and M = 6, we obtained a **test data speaker recognition rate of 75%**
+the **train data speaker recognition rate is always 100%** 
 
 ![Screenshot 2025-03-06 at 2 28 11 PM](https://github.com/user-attachments/assets/4820d139-7da3-4085-b49b-8d8fccc5f705)
 
@@ -50,8 +52,10 @@ we added more train and test data pairs from our team mates. With 5 additional t
 
 
 Test 9
-with additional 10 test and train pairs totalling in 22 train data and 19 test data, we obtained a **speaker recognition rate of 78.95%** 
+with additional 10 test and train pairs from the 2024 data, totalling in 22 train data and 19 test data, we obtained a **speaker recognition rate of 78.95%** It seems to perform more poorly compared to adding only 5 additional test and train pairs in test7 partII. 
 
 ![image](https://github.com/user-attachments/assets/3f59ab59-7fee-491d-b02b-a9f77b5b4979)
 
 
+Analysis: 
+- compare the test and train accuracy between the original data, 2024data, and 2025data
