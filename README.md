@@ -29,7 +29,13 @@ with the original 11 train data and 8 test data, e = 0.01 and M = 6, we obtained
 
 
 Test 7 - Part II 
-with 5 additional test and train pairs, totalling in 16 train data and 13 test data. We obtained a **speaker recognition rate of 84.6%**
+we added more train and test data pairs from our team mates. With 5 additional test and train pairs, totalling in 16 train data and 13 test data. We obtained a **speaker recognition rate of 84.6%**
 
 ![Screenshot 2025-03-06 at 2 29 07 PM](https://github.com/user-attachments/assets/b61e1abb-ff4f-4a57-96db-9b8b1ed6de23)
+
+
+Test 9
+with additional 10 test and train pairs totalling in 22 train data and 19 test data, we obtained a **speaker recognition rate of 78.95%** 
+![image](https://github.com/user-attachments/assets/3f59ab59-7fee-491d-b02b-a9f77b5b4979)
+
 
