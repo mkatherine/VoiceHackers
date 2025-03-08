@@ -46,13 +46,13 @@ the **train data speaker recognition rate is always 100%**
 
 
 Test 7 - Part II 
-we added more train and test data pairs from our team mates. With 5 additional test and train pairs, totalling in 16 train data and 13 test data. We obtained a **speaker recognition rate of 84.6%**
+we added more train and test data pairs from our team mates. With 5 additional test and train pairs, totalling in 16 train data and 13 test data, e =0.01 and M = 6. We obtained a **speaker recognition rate of 84.6%**
 
 ![Screenshot 2025-03-06 at 2 29 07 PM](https://github.com/user-attachments/assets/b61e1abb-ff4f-4a57-96db-9b8b1ed6de23)
 
 
 Test 9
-with additional 10 test and train pairs from the 2024 data, totalling in 22 train data and 19 test data, we obtained a **speaker recognition rate of 78.95%** It seems to perform more poorly compared to adding only 5 additional test and train pairs in test7 partII. 
+with additional 10 test and train pairs from the 2024 data, totalling in 22 train data and 19 test data, e =0.01 and M = 6 we obtained a **speaker recognition rate of 78.95%** It seems to perform more poorly compared to adding only 5 additional test and train pairs in test7 partII. 
 
 ![image](https://github.com/user-attachments/assets/3f59ab59-7fee-491d-b02b-a9f77b5b4979)
 
