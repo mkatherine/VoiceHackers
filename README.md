@@ -36,6 +36,7 @@ we added more train and test data pairs from our team mates. With 5 additional t
 
 Test 9
 with additional 10 test and train pairs totalling in 22 train data and 19 test data, we obtained a **speaker recognition rate of 78.95%** 
+
 ![image](https://github.com/user-attachments/assets/3f59ab59-7fee-491d-b02b-a9f77b5b4979)
 
 
