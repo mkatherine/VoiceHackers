@@ -7,7 +7,6 @@ function codebook = LBG(data, M,e)
     % - codebook: Trained cluster centroids (size: M x D)
     % Usage: Clustering L training vectors into M codebook vectors
     
-    e = 0.01;  % Splitting parameter
  
     %% a. Initialize with a single-vector codebook; this is the centroid of all training vectors
     codebook = mean(data, 1);  % row vector containing the mean of each column (mean val across all frames for each mfcc)
