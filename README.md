@@ -1,3 +1,18 @@
+Instructions to run the code:
+download all code in this repository and put them in one project folder. Then, add all subfolders as path in MATLAB.
+1. SpeechExtraction.mlx will generate results for tests 1-4. It loads the audio files, trims the audio to remove silence, does the STFT, plots the mel-spaced filter bank, applies the filterbank to the STFT and plots the cepstrum. The output is the mfcc.
+2. VectorQuantization.mlx does test 5- 6
+3. Main does test 7-10.
+
+Functions
+1. melfb: creates the melspaced filter bank
+2. our_mfcc: not to confuse with MATLAB internal mfcc.m function, our_mfcc solves for the mfcc coefficients
+3. loadwav: loads all the .wav file in a folder to extract the signal and fs
+4. LBG
+5. getrr_id: gets the recognition rate of input test and train data 
+
+
+
 Human Recognition Rate
 Maria Katherine - 75% - might redo
 
