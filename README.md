@@ -83,3 +83,8 @@ Question 4:**Much better** accuracy compared against test in 10a using zero/twel
 ![image](https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c)
 ![image](https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3)
 
+Analysis -
+Original data testing 75%
+2024 12/0: 77.78/88.89
+2025 11/5: 100/78.26
+The 2025 had the best accuracy and 11 and the most syllables meaning that each individual recording got more samples. 2024 had less tests in it and a worse accuracy and the original data set had the least tests and least accuracy. 
