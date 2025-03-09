@@ -53,7 +53,7 @@ we added more train and test data pairs from our team mates. With 5 additional t
 
 
 Test 8:
-Created a notch filter operating at the following freuencies: [20,50,60,200]. This increaseed our speaker recognition rate "Speaker Recognition Rate: 87.50%",creating a more refined system. Any other combination caused efficiency to stay at or drop below 75% which was our original test recognition rate.
+Created a notch filter operating at the following freuencies: [20,50,60,200]. **This increaseed our speaker recognition rate "Speaker Recognition Rate: 87.50%"**,creating a more refined system. Any other combination caused efficiency to stay at or drop below 75% which was our original test recognition rate.
 <img width="455" alt="image" src="https://github.com/user-attachments/assets/ba6642fe-889c-4b0d-92c2-c2da63029203" />
 
 Test 9
@@ -64,22 +64,22 @@ with additional 10 test and train pairs from the 2024 data, totalling in 22 trai
 Test 10a:
 
 Question 1: If we use "twelve" to identify speakers, what is the accuracy versus "zero"? 
-Accuracy for Zero: 88.89
-Accuracy for Twelve: 77.78
+**Accuracy for Zero: 88.89**
+**Accuracy for Twelve: 77.78**
 
 Question 2: If we train a whole system how accurate is your system?
-Combined Accuracy: 83.33
+**Combined Accuracy: 83.33**
 
 <img width="211" alt="image" src="https://github.com/user-attachments/assets/76c84b32-ea10-4999-9a9a-c8819046ddfe" />
 ![image](https://github.com/user-attachments/assets/45837b24-068f-4807-9264-77177b55f9b2)
 
 Test 10b: 
-Question 3: If we use "eleven" to identify speakers, what is the accuracy versus the
-system that uses "five"? 
-11: 100% most likely because it takes the longest to say
-5: 78.26
-Question 4: How well do they compare against test in 10a using zero/twelve?
-Much better!!
+Question 3:
+**11 Accuracy: 100%** most likely because it takes the longest to say
+**5 Accuracy: 78.26**
+
+Question 4:**Much better** accuracy compared against test in 10a using zero/twelve
+
 ![image](https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c)
 ![image](https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3)
 
