@@ -83,6 +83,3 @@ Question 4:**Much better** accuracy compared against test in 10a using zero/twel
 ![image](https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c)
 ![image](https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3)
 
-
-Analysis: 
-- compare the test and train accuracy between the original data, 2024data, and 2025data
