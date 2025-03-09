@@ -54,6 +54,7 @@ we added more train and test data pairs from our team mates. With 5 additional t
 
 Test 8:
 Created a notch filter operating at the following freuencies: [20,50,60,200]. This increaseed our speaker recognition rate "Speaker Recognition Rate: 87.50%",creating a more refined system. Any other combination caused efficiency to stay at or drop below 75% which was our original test recognition rate.
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/ba6642fe-889c-4b0d-92c2-c2da63029203" />
 
 Test 9
 with additional 10 test and train pairs from the 2024 data, totalling in 22 train data and 19 test data, e =0.01 and M = 6 we obtained a **speaker recognition rate of 78.95%** It seems to perform more poorly compared to adding only 5 additional test and train pairs in test7 partII. 
@@ -69,6 +70,9 @@ Accuracy for Twelve: 77.78
 Question 2: If we train a whole system how accurate is your system?
 Combined Accuracy: 83.33
 
+<img width="211" alt="image" src="https://github.com/user-attachments/assets/76c84b32-ea10-4999-9a9a-c8819046ddfe" />
+![image](https://github.com/user-attachments/assets/45837b24-068f-4807-9264-77177b55f9b2)
+
 Test 10b: 
 Question 3: If we use "eleven" to identify speakers, what is the accuracy versus the
 system that uses "five"? 
@@ -76,6 +80,8 @@ system that uses "five"?
 5: 78.26
 Question 4: How well do they compare against test in 10a using zero/twelve?
 Much better!!
+![image](https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c)
+![image](https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3)
 
 
 Analysis: 
