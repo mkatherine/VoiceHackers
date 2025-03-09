@@ -22,11 +22,39 @@ for i = 1:length(id_test) %test data
         end
     end
 
-    % Check if prediction is correct
-    if predicted_speaker == test_id
-        correct = correct + 1;
+    
+
+    % For test 10a (identifying type of speech):
+    if predicted_speaker > 100
+        % revert test id for correct calculations
+        if test_id < 100 
+          test_id = test_id + 100;
+        end
+
+        % add a col for idetifying 12 or 0
+        predicted_speech = floor(id_train / 100); %rounds down to nearest integer (all ids affilied with zero are <100)
+        if predicted_speech == 0
+            speech = 0;
+        else
+            speech = 12;
+        end
+
+    else
+       speech = ''; % Blank when not decoding speech type
     end
-    disp([test_id, predicted_speaker, correct]);
+   
+
+
+     % Check if prediction is correct
+            if predicted_speaker == test_id
+                correct = correct + 1;
+            end
+
+     fprintf('%10d %10d %10d %10s\n', test_id, predicted_speaker, correct, speech);
+    
+
+   
+
 end
 
 recognition_rate = (correct / length(id_test)) * 100;
