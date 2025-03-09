@@ -2,7 +2,7 @@ Instructions to run the code:
 download all code in this repository and put them in one project folder. Then, add all subfolders as path in MATLAB.
 1. SpeechExtraction.mlx will generate results for tests 1-4. It loads the audio files, trims the audio to remove silence, does the STFT, plots the mel-spaced filter bank, applies the filterbank to the STFT and plots the cepstrum. The output is the mfcc.
 2. VectorQuantization.mlx does test 5- 6
-3. Main does test 7-10.
+3. Main_updated does test 7-10.
 
 Functions
 1. melfb: creates the melspaced filter bank
@@ -13,8 +13,9 @@ Functions
 
 
 
-Human Recognition Rate
-Maria Katherine - 75% - might redo
+Human Recognition Rate- might redo
+Maria Katherine - 75% 
+Shannon - 64% 
 
 ![image](https://github.com/user-attachments/assets/74d3cb23-5fe4-42de-80d8-408750a25447)
 
@@ -51,10 +52,30 @@ we added more train and test data pairs from our team mates. With 5 additional t
 ![Screenshot 2025-03-06 at 2 29 07 PM](https://github.com/user-attachments/assets/b61e1abb-ff4f-4a57-96db-9b8b1ed6de23)
 
 
+Test 8:
+Created a notch filter operating at the following freuencies: [20,50,60,200]. This increaseed our speaker recognition rate "Speaker Recognition Rate: 87.50%",creating a more refined system. Any other combination caused efficiency to stay at or drop below 75% which was our original test recognition rate.
+
 Test 9
 with additional 10 test and train pairs from the 2024 data, totalling in 22 train data and 19 test data, e =0.01 and M = 6 we obtained a **speaker recognition rate of 78.95%** It seems to perform more poorly compared to adding only 5 additional test and train pairs in test7 partII. 
 
 ![image](https://github.com/user-attachments/assets/3f59ab59-7fee-491d-b02b-a9f77b5b4979)
+
+Test 10a:
+
+Question 1: If we use "twelve" to identify speakers, what is the accuracy versus "zero"? 
+Accuracy for Zero: 88.89
+Accuracy for Twelve: 77.78
+
+Question 2: If we train a whole system how accurate is your system?
+Combined Accuracy: 83.33
+
+Test 10b: 
+Question 3: If we use "eleven" to identify speakers, what is the accuracy versus the
+system that uses "five"? 
+11: 100% most likely because it takes the longest to say
+5: 78.26
+Question 4: How well do they compare against test in 10a using zero/twelve?
+Much better!!
 
 
 Analysis: 
