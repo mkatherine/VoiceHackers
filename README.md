@@ -17,16 +17,30 @@ Human Recognition Rate- might redo
 Maria Katherine - 75% 
 Shannon - 64% 
 
+plot of the original audio files from the train data with 8 speakers
 ![image](https://github.com/user-attachments/assets/74d3cb23-5fe4-42de-80d8-408750a25447)
 
-Voice Detection: Plot of audio signals after applying filter to remove anything with energy 0.0005 
+Voice Detection: Plot of audio signals after applying filter to remove anything with energy below 0.0005 
 ![image](https://github.com/user-attachments/assets/66ad82f2-8c22-4b36-acf2-8042817248f0)
+
+
+
+<img width="646" alt="Screenshot 2025-03-13 at 1 55 54 PM" src="https://github.com/user-attachments/assets/99b34367-92b1-4fdc-a1d9-7888b4b5774d" />
+
+Periodogram 
+we took the audio signal, separated the data framing with a width 256 samples with an overlap of N-N/3 samples, performed windowing with and did FFT to obtain this periodogram spectrum
 
 ![image](https://github.com/user-attachments/assets/08b9beb1-f883-4bfe-baa2-006d20a26904)
 
+
+Mel Frequency Bank 
 ![image](https://github.com/user-attachments/assets/275d7fef-d893-4e4c-8734-2e873b8ac2ea)
 
+Mel frequency bank applied to periodogram by multiplication
 ![image](https://github.com/user-attachments/assets/2ac3e30a-9579-45a5-8ae6-87aaf18953b0)
+
+To obtain the MFCC we utilized the following equation
+<img width="683" alt="Screenshot 2025-03-13 at 1 59 22 PM" src="https://github.com/user-attachments/assets/7cfbf9d3-9540-46cc-ab12-870523edd22d" />
 
 ![image](https://github.com/user-attachments/assets/70087792-eeb9-46f0-9470-30d0fb06da81)
 
