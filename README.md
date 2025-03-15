@@ -176,6 +176,7 @@ Matlab function getrr_id used to train the and test the speaker recognition on t
   <img width="447" alt="Screenshot 2025-03-14 at 10 58 08 PM" src="https://github.com/user-attachments/assets/e76df9c8-be54-4146-9b7f-a4e871c73bac" />
 </p>
 
+![image](https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc)
 
 
 Test 10a:
