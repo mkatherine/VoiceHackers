@@ -177,6 +177,7 @@ Matlab function getrr_id used to train the and test the speaker recognition on t
 </p>
 
 ![image](https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc)
+![image](https://github.com/user-attachments/assets/29e7ba5d-9eb8-46a3-8e6c-3c13bfd9186d)
 
 
 Test 10a:
@@ -188,7 +189,7 @@ Question 1: If we use "twelve" to identify speakers, what is the accuracy versus
 Question 2: If we train a whole system how accurate is your system?
 **Combined Accuracy: 83.33**
 <p align="center">
-  <img width="211" alt="image" src="https://github.com/user-attachments/assets/76c84b32-ea10-4999-9a9a-c8819046ddfe" />
+  <img width="211" alt="image" src="https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc" />
 </p>
 <p align="center">
   ![image](https://github.com/user-attachments/assets/45837b24-068f-4807-9264-77177b55f9b2)
