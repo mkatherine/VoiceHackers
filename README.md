@@ -43,7 +43,14 @@ A mel frequency bank is a series of bandpass filters that will impose a signal i
 
 **Vector Quantization**
 In this stage  the codebook is obtained, which is a collection of centroids for each MFCC set. The number of centroids is a parameter that the designer decides. The following flowchart is utilized to obtain the centroid. 
-<img width="396" alt="Screenshot 2025-03-14 at 10 45 03 PM" src="https://github.com/user-attachments/assets/bd9762b7-a682-4e7d-b9b6-fd0a9364455a" />
+
+<p align="center">
+  <img width="396" alt="Screenshot 2025-03-14 at 10 45 03 PM" src="https://github.com/user-attachments/assets/bd9762b7-a682-4e7d-b9b6-fd0a9364455a" />
+</p>
+<p align="center">
+  title
+</p>
+
 <img width="580" alt="Screenshot 2025-03-14 at 10 45 12 PM" src="https://github.com/user-attachments/assets/f5d5e8da-71c7-4844-a12b-cb471026926c" />
 
 
