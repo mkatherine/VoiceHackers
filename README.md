@@ -192,7 +192,7 @@ Question 2: If we train a whole system how accurate is your system?
   <img width="211" alt="image" src="https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc" />
 </p>
 <p align="center">
-  ![image](https://github.com/user-attachments/assets/45837b24-068f-4807-9264-77177b55f9b2)
+  <img width="211" alt="image" src="https://github.com/user-attachments/assets/643fd724-141c-47c8-aadd-297bddcc26b1" />
 </p>
 
 Test 10b: 
