@@ -168,16 +168,13 @@ Created a notch filter operating at the following freuencies: [20,50,60,200]. **
 With additional 10 test and train pairs from dataset #2, totaling 22 train data and 19 test data, using e = 0.01 and M = 6, we obtained a speaker recognition rate of 78.95%. It is observed that adding more training and testing data pairs lower the accuracy of the system. Tuning the parameters below e<0.01 and M>6 does not improve the system. 
 
 **Full Test with Dataset #2 and #3 (Test 10)**
-Matlab function getrr_id used to train the and test the speaker recognition on the datasets.
+Matlab function getrr_id was used to train the and test the speaker recognition on the datasets. Inorder to differentiate both the speaker and the word they were saying we chose to differentiate the ids affiliated with 12 by increasing their value by 100. Then 
 10a- speaker is classified by last 2 numbers of the ID and the word (zero or twelve) is classified by the number in the hundreds place of the ID 
-105- speaker 5 says 12
-003- speaker 3 saying zero
+
 <p align="center">
   <img width="447" alt="Screenshot 2025-03-14 at 10 58 08 PM" src="https://github.com/user-attachments/assets/e76df9c8-be54-4146-9b7f-a4e871c73bac" />
 </p>
 
-![image](https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc)
-![image](https://github.com/user-attachments/assets/29e7ba5d-9eb8-46a3-8e6c-3c13bfd9186d)
 
 
 Test 10a:
@@ -185,25 +182,30 @@ Test 10a:
 Question 1: If we use "twelve" to identify speakers, what is the accuracy versus "zero"? 
 **Accuracy for Zero: 88.89**
 **Accuracy for Twelve: 77.78**
+<div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc" width="300" alt="Image 1" />
+  <img src="https://github.com/user-attachments/assets/624b5a5e-b87d-4988-8eb7-6084e77bf729" width="300" alt="Image 2" />
+</div>
 
 Question 2: If we train a whole system how accurate is your system?
 **Combined Accuracy: 83.33**
-<p align="center">
-  <img width="211" alt="image" src="https://github.com/user-attachments/assets/ecffa990-30ff-450e-a0c1-7767cb717ccc" />
-</p>
-<p align="center">
-  <img width="211" alt="image" src="https://github.com/user-attachments/assets/643fd724-141c-47c8-aadd-297bddcc26b1" />
-</p>
+
+<div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/643fd724-141c-47c8-aadd-297bddcc26b1" width="300" alt="Image 1" />
+  
+</div>
+
 
 Test 10b: 
 Question 3:
 **11 Accuracy: 100%** most likely because it takes the longest to say
 **5 Accuracy: 78.26**
-
+<div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c" width="300" alt="Image 1" />
+  <img src="https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3" width="300" alt="Image 2" />
+</div>
 Question 4:**Much better** accuracy compared against test in 10a using zero/twelve
 
-![image](https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c)
-![image](https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3)
 
 Analysis -
 Original data testing 75%
