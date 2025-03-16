@@ -168,8 +168,11 @@ Created a notch filter operating at the following freuencies: [20,50,60,200]. **
 With additional 10 test and train pairs from dataset #2, totaling 22 train data and 19 test data, using e = 0.01 and M = 6, we obtained a speaker recognition rate of 78.95%. It is observed that adding more training and testing data pairs lower the accuracy of the system. Tuning the parameters below e<0.01 and M>6 does not improve the system. 
 
 **Full Test with Dataset #2 and #3 (Test 10)**
-Matlab function getrr_id was used to train the and test the speaker recognition on the datasets. Inorder to differentiate both the speaker and the word they were saying we chose to differentiate the ids affiliated with 12 by increasing their value by 100. Then 
-10a- speaker is classified by last 2 numbers of the ID and the word (zero or twelve) is classified by the number in the hundreds place of the ID 
+Matlab function getrr_id was used to train the and test the speaker recognition on the datasets. Inorder to differentiate both the speaker and word, the value of each ID affiliated with speaker 12 was increased by 100. Therefore the speaker is classified by last 2 numbers of the ID and the word (zero or twelve) is classified by the number in the hundreds place of the ID. Then by combining the existing mfccs for 12 and zero, and feeding that mfcc to our LBG function, we were able to create a combined training codebook. This codebook was used along with the combined training ID, combined testing id, and combined testing mfcc to generate the speaker recognition rate **Combined Accuracy: 83.33** for the combined system,which falls between the accuracy of zero alone and accuracy of 12 alone. .
+<div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/643fd724-141c-47c8-aadd-297bddcc26b1" width="300" alt="Image 1" />
+  
+</div>
 
 <p align="center">
   <img width="447" alt="Screenshot 2025-03-14 at 10 58 08 PM" src="https://github.com/user-attachments/assets/e76df9c8-be54-4146-9b7f-a4e871c73bac" />
@@ -177,9 +180,8 @@ Matlab function getrr_id was used to train the and test the speaker recognition 
 
 
 
-Test 10a:
 
-Question 1: If we use "twelve" to identify speakers, what is the accuracy versus "zero"? 
+If we use "twelve" data alone to identify speakers, we obtained an accuracy of 77.78, however when we used "zero" data alone we obtained an accuracy of 88.89. Speaking "0" rolls of the tongue more than speaking the slightly more complicated "12". This could explain why samples of zero obtain higher accuracies.
 **Accuracy for Zero: 88.89**
 **Accuracy for Twelve: 77.78**
 <div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
@@ -187,31 +189,27 @@ Question 1: If we use "twelve" to identify speakers, what is the accuracy versus
   <img src="https://github.com/user-attachments/assets/624b5a5e-b87d-4988-8eb7-6084e77bf729" width="300" alt="Image 2" />
 </div>
 
-Question 2: If we train a whole system how accurate is your system?
-**Combined Accuracy: 83.33**
+Combining the testing and training data from tests 12 and 0 allowed for us to reach a **Combined Accuracy: 83.33**, 
 
 <div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
   <img src="https://github.com/user-attachments/assets/643fd724-141c-47c8-aadd-297bddcc26b1" width="300" alt="Image 1" />
   
 </div>
 
+For Part B of Test 10, we use the same system by tested different numbers from an entirely new set of speakers to determine their accuracy. For speakers using the word "eleven" recorded **11 Accuracy: 100%**, while for speakers using the word "five" we recorded an accuracy of **5 Accuracy: 78.26**. The word 11 performed the best out of all of our tests so far, while 5 was 3rd best, at about 10% below our highest test from part 10a.
 
-Test 10b: 
-Question 3:
-**11 Accuracy: 100%** most likely because it takes the longest to say
-**5 Accuracy: 78.26**
 <div align="center" style="display: flex; align-items: flex-start; gap: 10px;">
   <img src="https://github.com/user-attachments/assets/79be85ca-1541-4140-bb36-b8ceb191b74c" width="300" alt="Image 1" />
   <img src="https://github.com/user-attachments/assets/18202fa1-5bd4-4c56-804d-07f93b38bad3" width="300" alt="Image 2" />
 </div>
-Question 4:**Much better** accuracy compared against test in 10a using zero/twelve
+
 
 
 Analysis -
 Original data testing 75%
 2024 12/0: 77.78/88.89
 2025 11/5: 100/78.26
-The 2025 had the best accuracy and 11 and the most syllables meaning that each individual recording got more samples. 2024 had less tests in it and a worse accuracy and the original data set had the least tests and least accuracy. 
+The 2025 data had the best accuracy and 11 and the most syllables meaning that each individual recording got more samples. 2024 had less tests in it and a worse accuracy and the original data set had the least tests and least accuracy. 
 
 
 # Conclusion
