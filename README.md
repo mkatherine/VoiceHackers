@@ -14,7 +14,7 @@ download all code in this repository and put them in one project folder. Then, a
 
 
 # Background
-Machine learning models are very popular today to perform speech identification. However, we can achieve comparable if not better results with a less complex method using simple signal processing methods. In this paper, we implemented signal processing tools to identify speaker ID for an unknown speaker audio file. Our approach is divided into four major parts: speech preprocessing, feature extraction, vector quantization and full test and demonstration. 
+Machine learning models are very popular today to perform speech identification. However, we can achieve comparable if not better results with a less complex method using simple signal processing methods. In this project, we implemented signal processing tools to identify speaker ID for an unknown speaker audio file. Our approach is divided into four major parts: speech preprocessing, feature extraction, vector quantization and full test and demonstration. 
 
 # Test Method
 
