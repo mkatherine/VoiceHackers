@@ -1,7 +1,7 @@
 # 2025 EEC 201 Final Project: Speech Recognition using DSP and Clustering
 **Shannon Perna & Maria Katherine**
-**Video link: https://drive.google.com/file/d/1MDaPZqyEML18NUCQSkMcguxJF72JdqTP/view?usp=sharing **
-
+**Video link: https://drive.google.com/file/d/1MDaPZqyEML18NUCQSkMcguxJF72JdqTP/view?usp=sharing**
+This project uses DSP methods and vector quantization to match speaker ID to an audio file. We were able to obtain speech recognition rate above >75% with multiple data sets and alterations. See details below! 
 
 
 # Instructions to run the code:
