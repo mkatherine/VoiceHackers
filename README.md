@@ -65,7 +65,7 @@ In this stage  the codebook is obtained, which is a collection of centroids for 
 </p>
 
 
-# Test Results 
+# Test Results and Analysis
 
 ## Human Recognition Rate (Test 1) 
 To compare the recognition rate of this system with a baseline, human recognition rate is obtained from two subjects. The subjects listened to the 11 train audio files from dataset#1, and tried to match the 8 test data to the corresponding ID. Subject one obtained a recognition rate of 75% while subject two obtained 62.5%, with both averaging to a 68.75% recognition rate. 
@@ -126,7 +126,7 @@ To obtain the MFCC we utilized the following equation:
 <p align="center">
   <img width="683" alt="Screenshot 2025-03-13 at 1 59 22 PM" src="https://github.com/user-attachments/assets/7cfbf9d3-9540-46cc-ab12-870523edd22d" />
 </p>
-The result is a cell array of MFCCs unique to each speaker. We then remove the K = 0 coefficient from the cell array as it is the coefficient that is affected by the change in speaker volume. 
+The result is a cell array of MFCCs unique to each speaker. We then remove the K = 0 coefficient from the cell array as it is the coefficient that is affected by the change in speaker volume. Removing it will remove the difference in volume between the two speakers. 
 
 ## Vector Quantization Test 5-6
 In this stage the centroid of each MFCC for every speaker is obtained and collated into a codebook. The function LBG.m generates the codebook. The design parameters here are e () and K or M (number of clusters) 
@@ -213,11 +213,17 @@ The 2025 data had the best accuracy and 11 and the most syllables meaning that e
 
 
 # Conclusion
+We've implemented DSP tools to create a speech recognition algorithm that identifies speaker ID from an unknown audio input. The system has the following yield: 
+Original data testing 75%
+dataset #2 2024 12/0: 77.78/88.89
+dataset #3 2025 11/5: 100/78.26
+notch filter with dataset #1: 87.50
+
 Adding additional train and dataset pairs can improve or reduce the accuracy of the system. If we add audio files with more distinct features and pronunciation, it is likely that the accuracy of the system will be improved ie. when we used an “eleven” data set that has 3 syllables. 
 
 We utilize the cepstrum for speaker recognition instead of direct FFT as the logarithm function to solve for the cepstrum will amplify weaker signal components that are otherwise dominated by stronger features. Taking the log will us to focus on less dominant features. Utilizing DCT in the cepstrum will also provide better energy concentration and ease clustering. 
 
-We remove the first component K = 0 because it contains the difference in volume between the two speakers. 
+
 
 
 
