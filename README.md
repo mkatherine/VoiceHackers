@@ -165,7 +165,7 @@ Created a notch filter operating at the following freuencies: [20,50,60,200]. **
 </p>
 
 **Full Test with data set #2 (Test 9)** 
-With additional 10 test and train pairs from dataset #2, totaling 22 train data and 19 test data, using e = 0.01 and M = 6, we obtained a speaker recognition rate of 78.95%. It is observed that adding more training and testing data pairs lower the accuracy of the system. Tuning the parameters below e<0.01 and M>6 does not improve the system. 
+With additional 10 test and train pairs from dataset #2, totaling 22 train data and 19 test data, using e = 0.01 and M = 6, we obtained a speaker recognition rate of 78.95%. Tuning the parameters below e<0.01 and M>6 does not improve the system. 
 
 **Full Test with Dataset #2 and #3 (Test 10)**
 Matlab function getrr_id was used to train the and test the speaker recognition on the datasets. Inorder to differentiate both the speaker and word, the value of each ID affiliated with speaker 12 was increased by 100. Therefore the speaker is classified by last 2 numbers of the ID and the word (zero or twelve) is classified by the number in the hundreds place of the ID. Then by combining the existing mfccs for 12 and zero, and feeding that mfcc to our LBG function, we were able to create a combined training codebook. This codebook was used along with the combined training ID, combined testing id, and combined testing mfcc to generate the speaker recognition rate **Combined Accuracy: 83.33** for the combined system,which falls between the accuracy of zero alone and accuracy of 12 alone. .
