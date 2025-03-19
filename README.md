@@ -158,7 +158,7 @@ Test 7 part (b) then, we added 5 more recording voices of our team mates. With a
 
 **Full Test with Notch Filter (Test 8)** 
 
-Created a notch filter operating at the following freuencies: [20,50,60,200]. **This increaseed our speaker recognition rate "Speaker Recognition Rate: 87.50%"**,creating a more refined system. Any other combination caused efficiency to stay at or drop below 75% which was our original test recognition rate.
+Created a notch filter operating at the following freuencies: [20,50,60,200]. **This increaseed our speaker recognition rate "Speaker Recognition Rate: 87.50%"**,creating a more refined system. Any other combination, such as [20,50,60] or [50,60,200] or [20, 60, 200] caused efficiency to stay at 75% which was our original test recognition rate.
 
 <p align="center">
   <img width="455" alt="image" src="https://github.com/user-attachments/assets/ba6642fe-889c-4b0d-92c2-c2da63029203" />
