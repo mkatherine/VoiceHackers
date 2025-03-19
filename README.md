@@ -1,3 +1,10 @@
+# 2025 EEC 201 Final Project 
+# Speech Recognition using DSP and Clustering
+# Shannon Perna & Maria Katherine
+## Video link: https://drive.google.com/file/d/1MDaPZqyEML18NUCQSkMcguxJF72JdqTP/view?usp=sharing
+
+
+
 # Instructions to run the code:
 download all code in this repository and put them in one project folder. Then, add all subfolders as path in MATLAB.
 1. SpeechExtraction.mlx will generate results for tests 1-4. It loads the audio files, trims the audio to remove silence, does the STFT, plots the mel-spaced filter bank, applies the filterbank to the STFT and plots the cepstrum. The output is the mfcc.
