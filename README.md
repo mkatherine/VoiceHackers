@@ -1,7 +1,6 @@
-# 2025 EEC 201 Final Project 
-# Speech Recognition using DSP and Clustering
-# Shannon Perna & Maria Katherine
-## Video link: https://drive.google.com/file/d/1MDaPZqyEML18NUCQSkMcguxJF72JdqTP/view?usp=sharing
+# 2025 EEC 201 Final Project: Speech Recognition using DSP and Clustering
+**Shannon Perna & Maria Katherine**
+**Video link: https://drive.google.com/file/d/1MDaPZqyEML18NUCQSkMcguxJF72JdqTP/view?usp=sharing **
 
 
 
