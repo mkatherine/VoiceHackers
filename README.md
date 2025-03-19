@@ -224,6 +224,9 @@ Adding additional train and dataset pairs can improve or reduce the accuracy of 
 We utilize the cepstrum for speaker recognition instead of direct FFT as the logarithm function to solve for the cepstrum will amplify weaker signal components that are otherwise dominated by stronger features. Taking the log will us to focus on less dominant features. Utilizing DCT in the cepstrum will also provide better energy concentration and ease clustering. 
 
 
+# Efforts
+Maria worked on the audio file processing, obtaining the MFCC coefficients, and initial testing of the algorithm.
+Shannon worked on LBG algorithm, notch filter, and testing robustiness of the system. 
 
 
 
